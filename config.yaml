@@ -12,7 +12,7 @@ keywords:
   - "injection"
 
 logic: "AND"                 # 组间逻辑：categories 与 keywords 间 AND/OR
-max_results: 15
+max_results: 5
 sort_by: "lastUpdatedDate"  # 还可以是submittedDate 建议改成lastUpdatedDate按更新时间排，能捞到v2/v3的“新增”
 sort_order: "descending"
 
@@ -36,7 +36,7 @@ email:
   tls: "ssl"  # auto / ssl / starttls
   debug: false     # true 可打印 SMTP 调试日志
   detail: "full"  # simple / full
-  max_items: 30
+  max_items: 5
   attach_md: true  # 是否开启Markdown附件
   attach_pdf: false  # 是否开启PDF附件
 
