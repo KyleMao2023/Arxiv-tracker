@@ -1,15 +1,18 @@
 categories: ["cs.CV", "cs.LG", "cs.AI"]
 keywords:
-  - "open vocabulary"
-  - "open-vocabulary"
-  - "open vocabulary segmentation"
-  - "open-vocabulary segmentation"
-  - "vision language model"
-  - "training-free"
-  - "training free"
+  - "security"
+  - "privacy"
+  - "privacy risk"
+  - "inversion attack"
+  - "model inversion"
+  - "adversial"
+  - "backdoor"
+  - "attack"
+  - "defense"
+  - "injection"
 
 logic: "AND"                 # 组间逻辑：categories 与 keywords 间 AND/OR
-max_results: 30
+max_results: 15
 sort_by: "lastUpdatedDate"  # 还可以是submittedDate 建议改成lastUpdatedDate按更新时间排，能捞到v2/v3的“新增”
 sort_order: "descending"
 
@@ -41,13 +44,13 @@ email:
 llm:
   provider: "openai-compatible"     # 兼容 OpenAI SDK 的服务
   # 硅基流动的版本
-  base_url: "https://api.siliconflow.cn"
-  model: "Qwen/Qwen2.5-7B-Instruct"
-  api_key_env: "OPENAI_COMPAT_API_KEY"
+  # base_url: "https://api.siliconflow.cn"
+  # model: "Qwen/Qwen2.5-7B-Instruct"
+  # api_key_env: "OPENAI_COMPAT_API_KEY"
   # Deepseek的版本
-  # base_url: "https://api.deepseek.com"
-  # model: "deepseek-chat"
-  # api_key_env: "DS_API_KEY"
+  base_url: "https://api.deepseek.com"
+  model: "deepseek-chat"
+  api_key_env: "DS_API_KEY"
   
 
   system_prompt_en: |
