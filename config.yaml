@@ -10,6 +10,7 @@ keywords:
   - "attack"
   - "defense"
   - "injection"
+  - "vulnerability"
 
 logic: "AND"                 # 组间逻辑：categories 与 keywords 间 AND/OR
 max_results: 6
@@ -17,14 +18,14 @@ sort_by: "lastUpdatedDate"  # 还可以是submittedDate 建议改成lastUpdatedD
 sort_order: "descending"
 
 # zh / en / both
-lang: "zh"
+lang: "both"
 
 # —— 摘要设置 ——
 # mode: none / heuristic / llm
 summary:
   mode: llm # mode: "heuristic"
   # scope: tldr / full / both
-  scope: "full"
+  scope: "both"
 
 # —— 邮件发送（QQ 邮箱） ——
 email:
@@ -75,7 +76,7 @@ site:
   title: "arXiv 论文速递"
   keep_runs: 1024         # 历史保留期（按页面份数）
   theme: "light"        # "light" | "dark" | "auto"
-  accent: "#2563eb"     # 主题色（可自定义）
+  accent: "#53d361"     # 主题色（可自定义）
 
 freshness:
   since_days: 3650           # 只看最近 N 天内新提交/更新（1=近24h）
